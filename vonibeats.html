@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voni Beats</title>
+  <link rel="stylesheet" href="main.css">
+  <div class="background-photo"></div>
+  <!--Added to give Cart a Count inside a red bubble-->
+  <style>
+  .badge {
+    position: relative;
+  }
+
+  .badge::after {
+    content: attr(data-count);
+    position: absolute;
+    top: -10px; /* Adjust the position as needed */
+    right: -10px; /* Adjust the position as needed */
+    background-color: red; 
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 20px;
+  }
+</style>
+  
+</head>
+<body>
+  <button style="border: none; background-color: transparent;">
+  <img src="/Users/giolavant/CSC 102./shopping cart.jpeg" alt="Cart" style="width: 50px; height: 50px;">
+  <span id="cart-badge" class="badge" data-count="0"></span>
+</button>
+
+
+  <script>
+    var cartCount = 0; // Initialize cart count variable
+  
+    function addToCart() {
+      cartCount++; // Increment cart count
+      updateCartBadge(cartCount); // Update the cart badge
+    }
+  
+    function updateCartBadge(count) {
+      var cartBadge = document.getElementById('cart-badge');
+      cartBadge.setAttribute('data-count', count);
+    }
+  </script>
+  <header>
+    
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Beats for Sale</a></li> 
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Mixing/Mastering</a></li>
+        <li><a href="#">LoopKits</a></li>
+        <li><a href="#">Cart</a></li> 
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>N e w  R e l e a s e s</h1>
+    <div style="text-align: center;">
+  <img id="Aboutme" src="/Users/giolavant/CSC 102./theaccolade.jpeg" alt="AboutVoniBeats" style="width: 250px; height: 325px;">
+  <footer>
+    Voni Beats - The Accolade (album)
+  </footer>
+</div>
+<button onclick="addToCart()" type="button">Add to Cart</button>
+
+    <p> "Voni Beats" is a passionate and diligent music producer hailing from the sun-kissed landscapes of Arizona. My journey has been colored with experiences of working alongside a myriad of artists from every corner of the United States, enriching my skills and channeling my creativity. I am always on the lookout for more artistic collaborations, keen on growing and expanding my horizons. Let's create magic through music and build something incredible together.
+
+      Voni Beats</p>
+      <section>
+        <h2>Featured Albums</h2>
+      
+        <div class="image-container">
+          <img src="/Users/giolavant/Downloads/ETEFeature.jpeg" alt="Featured Albums/Singles" style="width: 150px; height: 150px;margin-right: 50px;">
+          <button onclick="openNewWindow('https://www.youtube.com/watch?v=qdOLO0DbYZg')" style="width: 50px; height: 75px;">Listen</button>
+          <p>ETE Brimy - "Sunny"</p>
+        </div>
+        
+        <script>
+          function openNewWindow(url) {
+            window.open(url);
+          }
+        </script>
+        
+        <div class="image-container">
+          <img src="/Users/giolavant/Downloads/Etekings.JPG" alt="Featured Albums/Singles" style="width: 150px; height: 150px;margin-right: 50px;">
+          <p>ETE Brimy - "Nobody Special"</p>
+        </div>
+      
+      </section>
+      
+      <style>
+        .image-container {
+          display: flex;
+          margin-bottom: 20px;
+        }
+      </style>
+
+    <section>
+      <h2>New Releases</h2>
+      <!-- Display new releases here -->
+    </section>
+  </main>
+
+  <footer>
+    
+  </footer>
+</body>
+</html>
