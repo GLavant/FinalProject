@@ -1,2 +1,3 @@
 This Website is Meant to Reach Artists, Producers, Movie Directors(Looking for sounds), ect.. .
 This website will generate passive income and Gather users info in order to keep them coming back and sending out alerts via text abt new promotions/new music ect...
+The Website will be made to showcase my music/sell/lease to anyone looking for music that wont get copywritten or that simply wants to use it to release there own song.
